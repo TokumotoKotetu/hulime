@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class generator : MonoBehaviour
 {
-    [SerializeField] GameObject test;
+    [SerializeField] GameObject _itemPrefab;
     /// <summary>  アイテム再出現までの時間 </summary>
     [SerializeField]float _coolTime = 3.0f;
     /// <summary> 経過時間測定用 </summary>
@@ -13,10 +13,15 @@ public class generator : MonoBehaviour
     Vector3 _position;
 
     [SerializeField]BoxCollider2D boxCollider2D;
+
+    [SerializeField] Vector2 _moveDir;
     // Start is called before the first frame update
     void Start()
     {
+        
         _position = transform.position;
+        
+        
     }
 
     // Update is called once per frame
@@ -26,10 +31,12 @@ public class generator : MonoBehaviour
         float randomY = Random.Range(-boxCollider2D.size.y, boxCollider2D.size.y)*0.5f;
 
         _coolTimeCount += Time.deltaTime;
+        
 
-        if (_coolTimeCount < _coolTime)
+        if (_coolTimeCount > _coolTime)
         {
-            test=Instantiate(test,new Vector3(_position.x+randomX,_position.y+randomY,0), Quaternion.identity);
+            var item = Instantiate(_itemPrefab,new Vector3(_position.x+randomX,_position.y+randomY,0), Quaternion.identity);
+            item.GetComponent<ItemMovementController>().MoveDir = _moveDir;
             _coolTimeCount = 0;
         }
         
