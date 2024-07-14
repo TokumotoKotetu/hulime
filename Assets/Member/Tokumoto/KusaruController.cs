@@ -10,7 +10,7 @@ public class KusaruController : MonoBehaviour
 
     private void Start()
     {
-        _player = GameObject.Find("Player");
+        _player = GameObject.Find("Range");
         _playerIncreaseController = _player.GetComponent<PlayerIncreaseController>();
     }
 
