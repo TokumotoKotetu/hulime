@@ -10,6 +10,7 @@ public class HukuItemController : MonoBehaviour
         if (collision.tag == "Player"||collision.tag == "PlayerCopy")
         {
             StartCoroutine(Huku());
+            Destroy(gameObject);
         } 
     }
     public IEnumerator Huku()
@@ -21,5 +22,6 @@ public class HukuItemController : MonoBehaviour
         yield return new WaitForSeconds(_invincibleTime);
         playerController._invincible = false;
         Debug.Log("ñ≥ìGâèú");
+        
     }
 }

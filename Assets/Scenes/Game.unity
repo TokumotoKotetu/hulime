@@ -1220,8 +1220,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603fe3345db819044afb676cd0455863, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemPrefab: {fileID: 0}
-  _coolTime: 0
+  _itemPrefab: {fileID: 6140787363165046036, guid: b7723497ba08b5248b130169e09f2871, type: 3}
+  _coolTime: 4
   boxCollider2D: {fileID: 729642251}
   _moveDir: {x: 0, y: -1}
 --- !u!4 &729642253
@@ -1348,6 +1348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  _invincible: 0
 --- !u!58 &762197823
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1625,8 +1626,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603fe3345db819044afb676cd0455863, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemPrefab: {fileID: 0}
-  _coolTime: 0
+  _itemPrefab: {fileID: 6140787363165046036, guid: b7723497ba08b5248b130169e09f2871, type: 3}
+  _coolTime: 4
   boxCollider2D: {fileID: 921676779}
   _moveDir: {x: -1, y: 0}
 --- !u!4 &921676781
@@ -2625,8 +2626,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603fe3345db819044afb676cd0455863, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemPrefab: {fileID: 0}
-  _coolTime: 0
+  _itemPrefab: {fileID: 6140787363165046036, guid: b7723497ba08b5248b130169e09f2871, type: 3}
+  _coolTime: 4
   boxCollider2D: {fileID: 1986746494}
   _moveDir: {x: 0, y: 1}
 --- !u!4 &1986746496
@@ -2812,11 +2813,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2043110131}
   - component: {fileID: 2043110130}
-  - component: {fileID: 2043110136}
-  - component: {fileID: 2043110135}
-  - component: {fileID: 2043110134}
   - component: {fileID: 2043110133}
-  - component: {fileID: 2043110132}
+  - component: {fileID: 2043110134}
   - component: {fileID: 2043110129}
   m_Layer: 0
   m_Name: Generator
@@ -2854,7 +2852,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2882,8 +2880,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603fe3345db819044afb676cd0455863, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemPrefab: {fileID: 0}
-  _coolTime: 0
+  _itemPrefab: {fileID: 5450201376285062232, guid: efb2815f8e6998f469d34ede64647145, type: 3}
+  _coolTime: 4
   boxCollider2D: {fileID: 2043110129}
   _moveDir: {x: 1, y: 0}
 --- !u!4 &2043110131
@@ -2895,28 +2893,12 @@ Transform:
   m_GameObject: {fileID: 2043110128}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.38, y: -0.4, z: -9.927309}
+  m_LocalPosition: {x: -7.64, y: -0.4, z: -9.927309}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2043110132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2043110128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 603fe3345db819044afb676cd0455863, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _itemPrefab: {fileID: 0}
-  _coolTime: 0
-  boxCollider2D: {fileID: 0}
-  _moveDir: {x: 0, y: 0}
 --- !u!114 &2043110133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2929,10 +2911,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603fe3345db819044afb676cd0455863, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemPrefab: {fileID: 0}
-  _coolTime: 0
-  boxCollider2D: {fileID: 0}
-  _moveDir: {x: 0, y: 0}
+  _itemPrefab: {fileID: 6140787363165046036, guid: b7723497ba08b5248b130169e09f2871, type: 3}
+  _coolTime: 6
+  boxCollider2D: {fileID: 2043110129}
+  _moveDir: {x: 1, y: 0}
 --- !u!114 &2043110134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2945,42 +2927,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603fe3345db819044afb676cd0455863, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _itemPrefab: {fileID: 0}
-  _coolTime: 0
-  boxCollider2D: {fileID: 0}
-  _moveDir: {x: 0, y: 0}
---- !u!114 &2043110135
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2043110128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 603fe3345db819044afb676cd0455863, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _itemPrefab: {fileID: 0}
-  _coolTime: 0
-  boxCollider2D: {fileID: 0}
-  _moveDir: {x: 0, y: 0}
---- !u!114 &2043110136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2043110128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 603fe3345db819044afb676cd0455863, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _itemPrefab: {fileID: 0}
-  _coolTime: 0
+  _itemPrefab: {fileID: 702084627747598741, guid: b609f174e68768740908807568bccbe1, type: 3}
+  _coolTime: 5
   boxCollider2D: {fileID: 2043110129}
-  _moveDir: {x: 0, y: 0}
+  _moveDir: {x: 1, y: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
