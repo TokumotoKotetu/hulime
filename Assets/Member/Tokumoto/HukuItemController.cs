@@ -11,7 +11,7 @@ public class HukuItemController : MonoBehaviour
         {
             GameObject gameObject = GameObject.Find("Range");
             PlayerIncreaseController controller = gameObject.GetComponent<PlayerIncreaseController>();
-            StartCoroutine(controller.Huku(_invincibleTime));
+            controller.StartHuku(_invincibleTime);
             Destroy(this.gameObject);
         } 
     }

@@ -60,6 +60,10 @@ public class PlayerIncreaseController : MonoBehaviour
         }
     }
 
+    public void StartHuku(float _invincibleTime)
+    {
+        StartCoroutine(Huku(_invincibleTime));
+    }
     public IEnumerator Huku(float _invincibleTime)
     {
         GameObject player = GameObject.Find("Range");
@@ -67,8 +71,9 @@ public class PlayerIncreaseController : MonoBehaviour
         PlayerStats._invincible = true;
         Debug.Log(_invincibleTime);
         yield return new WaitForSeconds(_invincibleTime);
-        PlayerStats._invincible = false;
         Debug.Log("ñ≥ìGâèú");
+        PlayerStats._invincible = false;
+
 
     }
 }
