@@ -4,7 +4,7 @@ public class generator : MonoBehaviour
 {
     [SerializeField] GameObject _itemPrefab;
     /// <summary>  アイテム再出現までの時間 </summary>
-    [SerializeField] float _coolTime = 3.0f;
+    [SerializeField] float _coolTime;
     /// <summary> 経過時間測定用 </summary>
     float _coolTimeCount = 0f;
 
@@ -27,14 +27,13 @@ public class generator : MonoBehaviour
 
         _coolTimeCount += Time.deltaTime;
 
-
-        if (_coolTimeCount > _coolTime)
-        {
-            var item = Instantiate(_itemPrefab, new Vector3(_position.x + randomX, _position.y + randomY, 0), Quaternion.identity);
-            item.GetComponent<ItemMovementController>().MoveDir = _moveDir;
-            _coolTimeCount = 0;
-            //SEController.Instance.RunSE();
-        }
+            if (_coolTimeCount > _coolTime)  
+            {
+                var item = Instantiate(_itemPrefab, new Vector3(_position.x + randomX, _position.y + randomY, 0), Quaternion.identity);
+                item.GetComponent<ItemMovementController>().MoveDir = _moveDir;
+                _coolTimeCount = 0;
+                //SEController.Instance.RunSE();
+            }
     }
 
 }
