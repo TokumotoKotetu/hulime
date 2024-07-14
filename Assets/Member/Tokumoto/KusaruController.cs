@@ -7,13 +7,13 @@ public class KusaruController : MonoBehaviour
     [SerializeField] int _damage = 0;
     GameObject _player;
     PlayerIncreaseController _playerIncreaseController;
-    PlayerController _playerController;
+    Playerstatuscontroller _playerController;
 
     private void Start()
     {
         _player = GameObject.Find("Range");
         _playerIncreaseController = _player.GetComponent<PlayerIncreaseController>();
-        _playerController = _player.GetComponent<PlayerController>();
+        _playerController = _player.GetComponent<Playerstatuscontroller>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

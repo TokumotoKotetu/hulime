@@ -59,4 +59,16 @@ public class PlayerIncreaseController : MonoBehaviour
             }
         }
     }
+
+    public IEnumerator Huku(float _invincibleTime)
+    {
+        GameObject player = GameObject.Find("Range");
+        var PlayerStats = FindObjectOfType<Playerstatuscontroller>();
+        PlayerStats._invincible = true;
+        Debug.Log(_invincibleTime);
+        yield return new WaitForSeconds(_invincibleTime);
+        PlayerStats._invincible = false;
+        Debug.Log("ñ≥ìGâèú");
+
+    }
 }

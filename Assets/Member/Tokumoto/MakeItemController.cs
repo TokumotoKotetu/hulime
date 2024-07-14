@@ -8,13 +8,13 @@ public class MakeItemController : MonoBehaviour
     GameObject _gameManager;
     GameSystemController _gameSystemController;
     GameObject _player;
-    PlayerController _playerController;
+    Playerstatuscontroller _playerController;
     private void Start()
     {
         _gameManager = GameObject.Find("GameManager");
         _gameSystemController = _gameManager.GetComponent<GameSystemController>();
         _player = GameObject.Find("Range");
-        _playerController = _player.GetComponent<PlayerController>();
+        _playerController = _player.GetComponent<Playerstatuscontroller>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

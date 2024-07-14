@@ -11,7 +11,7 @@ public class Playerstatuscontroller : MonoBehaviour
 
     float _speedUpTimer;
     float _speedDownTimer;
-
+    public bool _invincible = false;
     public float TotalSpeed()
     {
         return speed + _additionSpeed - _subtractionSpeed;

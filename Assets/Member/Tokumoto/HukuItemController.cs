@@ -9,19 +9,11 @@ public class HukuItemController : MonoBehaviour
     {
         if (collision.tag == "Player"||collision.tag == "PlayerCopy")
         {
-            StartCoroutine(Huku());
-            Destroy(gameObject);
+            GameObject gameObject = GameObject.Find("Range");
+            PlayerIncreaseController controller = gameObject.GetComponent<PlayerIncreaseController>();
+            StartCoroutine(controller.Huku(_invincibleTime));
+            Destroy(this.gameObject);
         } 
     }
-    public IEnumerator Huku()
-    {
-        GameObject player = GameObject.Find("Range");
-        var playerController = player.GetComponent<PlayerController>();
-        playerController._invincible = true;
-        Debug.Log("ñ≥ìGäJén");
-        yield return new WaitForSeconds(_invincibleTime);
-        playerController._invincible = false;
-        Debug.Log("ñ≥ìGâèú");
-        
-    }
+
 }
