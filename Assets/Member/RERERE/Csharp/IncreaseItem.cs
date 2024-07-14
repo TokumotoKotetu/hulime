@@ -9,9 +9,13 @@ public class IncreaseItem : MonoBehaviour
     public PlayerIncreaseController PlayerIncreaseController;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        for (int i = 0; i < 3; i++)
+        if(collision.gameObject.CompareTag("Player"))
         {
-           PlayerIncreaseController.Increase();
+            for (int i = 0; i < 3; i++)
+            {
+                PlayerIncreaseController.Increase();
+            }
         }
+        
     }
 }
