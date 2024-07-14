@@ -13,6 +13,7 @@ public class KusaruController : MonoBehaviour
         _player = GameObject.Find("Player");
         _playerIncreaseController = _player.GetComponent<PlayerIncreaseController>();
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "PlayerCopy" || collision.gameObject.tag == "Player")
