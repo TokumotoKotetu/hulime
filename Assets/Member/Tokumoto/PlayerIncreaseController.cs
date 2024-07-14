@@ -48,17 +48,11 @@ public class PlayerIncreaseController : MonoBehaviour
                 if (players[i] != null)
                 {
                     Destroy(players[i]);
-                }
-                else
-                {
-                    //ゲームオーバー
-                }                  
+                }               
             }
         }
         else
         {
-            Debug.Log("ゲームオーバー");
-            //Gameover();
             foreach(GameObject copy in players)
             {
                 Destroy(copy);

@@ -21,7 +21,6 @@ public class KusaruController : MonoBehaviour
 
              _playerIncreaseController.Decrease(_damage);
              Debug.Log("É_ÉÅÅ[ÉW");
-
             Destroy(gameObject);
         }
     }
