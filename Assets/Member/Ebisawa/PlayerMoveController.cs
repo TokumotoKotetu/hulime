@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb2d;
     [SerializeField] float speed = 1.0f;
     float x, y;
+    public bool _invincible = false;
 
     void Start()
     {

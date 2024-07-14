@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1008501338613943794}
   m_Layer: 0
   m_Name: kusaruItemTmp
-  m_TagString: Untagged
+  m_TagString: DeBuff
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
