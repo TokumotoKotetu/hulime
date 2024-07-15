@@ -19,7 +19,7 @@ public class KusaruController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(_playerController._invincible == true)
+        if(_playerController._invincible)
         {
             Destroy(gameObject);
         }
