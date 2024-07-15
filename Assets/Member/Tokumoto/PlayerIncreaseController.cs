@@ -9,17 +9,12 @@ public class PlayerIncreaseController : MonoBehaviour
     CircleCollider2D _circleCollider;
     Vector2 MakePos;
 
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.H))
         {
-            Increase();
+            Increase(1);
         }
         if (Input.GetKeyDown(KeyCode.G))
         {
@@ -27,15 +22,18 @@ public class PlayerIncreaseController : MonoBehaviour
         }
     }
 
-    public void Increase()
+    public void Increase(int addNumber)
     {
-        _circleCollider = GetComponent<CircleCollider2D>();
-        Vector2 playerPos = gameObject.transform.position;
-        MakePos =  playerPos + _circleCollider.radius * Random.insideUnitCircle;
+        for(int i  = 0; i < addNumber; i++)
+        {
+            _circleCollider = GetComponent<CircleCollider2D>();
+            Vector2 playerPos = gameObject.transform.position;
+            MakePos = playerPos + _circleCollider.radius * Random.insideUnitCircle;
 
-        GameObject obj = Instantiate(_playerPrefab);
-        obj.transform.position = MakePos;
-        obj.transform.parent = _player.gameObject.transform;
+            GameObject obj = Instantiate(_playerPrefab);
+            obj.transform.position = MakePos;
+            obj.transform.parent = _player.gameObject.transform;
+        }
     }
 
     public void Decrease(int damage)
