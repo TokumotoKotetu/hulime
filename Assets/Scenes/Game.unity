@@ -307,6 +307,7 @@ GameObject:
   - component: {fileID: 141219967}
   - component: {fileID: 141219966}
   - component: {fileID: 141219965}
+  - component: {fileID: 141219970}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -409,6 +410,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 405a1812fc93dd544a161b1b524ba360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &141219970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141219964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 042d9db92f08b8b45921acd010a186f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &272096191
@@ -977,6 +990,18 @@ MonoBehaviour:
           m_StringArgument: Title
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 141219970}
+        m_TargetAssemblyTypeName: SEButtlon, Assembly-CSharp
+        m_MethodName: PlayButtonSE
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 2c90af5577be1c1418782835bb79f2f1, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &570647843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1453,6 +1478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerPrefab: {fileID: 6032122843931588430, guid: 7b7718275fbe5f74eba98cc68d728f49, type: 3}
   _player: {fileID: 779204623}
+  _huku: 0
 --- !u!114 &762197822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2507,6 +2533,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Game
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 141219970}
+        m_TargetAssemblyTypeName: SEButtlon, Assembly-CSharp
+        m_MethodName: PlayButtonSE
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 2c90af5577be1c1418782835bb79f2f1, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1450306187
