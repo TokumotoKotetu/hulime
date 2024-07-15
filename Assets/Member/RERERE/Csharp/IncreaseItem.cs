@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class IncreaseItem : MonoBehaviour
 {
-    // Start is called before the first frame update
-
-    public PlayerIncreaseController PlayerIncreaseController;
+    [SerializeField] int _addNumber;
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Player"))
+        GameObject _player = GameObject.Find("Range");
+        PlayerIncreaseController _playerIncreaseController;
+        _playerIncreaseController = _player.GetComponent<PlayerIncreaseController>();
+        if (collision.tag == "Player" || collision.tag == "PlayerCopy")
         {
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < _addNumber; i++)
             {
-                PlayerIncreaseController.Increase();
+                _playerIncreaseController.Increase();
             }
+            Destroy(gameObject);
         }
         
     }
