@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37eca00eb75e7734195b1641f93f9589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _addTime: 10
+  _addTime: 3
   _addSlimeNumber: 1
   _getSound: {fileID: 8300000, guid: 88d1cdf4d0ea2f94192fdfac881dbc30, type: 3}
 --- !u!114 &1344788726632934392
