@@ -1008,6 +1008,9 @@ GameObject:
   m_Component:
   - component: {fileID: 729642253}
   - component: {fileID: 729642252}
+  - component: {fileID: 729642256}
+  - component: {fileID: 729642255}
+  - component: {fileID: 729642254}
   - component: {fileID: 729642251}
   m_Layer: 0
   m_Name: Generator3
@@ -1092,6 +1095,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &729642254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729642250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 603fe3345db819044afb676cd0455863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemPrefab: {fileID: 702084627747598741, guid: b609f174e68768740908807568bccbe1, type: 3}
+  _coolTime: 5
+  boxCollider2D: {fileID: 729642251}
+  _moveDir: {x: 0, y: -1}
+--- !u!114 &729642255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729642250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 603fe3345db819044afb676cd0455863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemPrefab: {fileID: 5450201376285062232, guid: efb2815f8e6998f469d34ede64647145, type: 3}
+  _coolTime: 4
+  boxCollider2D: {fileID: 729642251}
+  _moveDir: {x: 0, y: -1}
+--- !u!114 &729642256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729642250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 603fe3345db819044afb676cd0455863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemPrefab: {fileID: 5630040215501022095, guid: 442109110f97bed4c89e0c81a0bf6b4a, type: 3}
+  _coolTime: 3
+  boxCollider2D: {fileID: 729642251}
+  _moveDir: {x: 0, y: -1}
 --- !u!1 &732919075
 GameObject:
   m_ObjectHideFlags: 0
@@ -1428,6 +1479,9 @@ GameObject:
   m_Component:
   - component: {fileID: 921676781}
   - component: {fileID: 921676780}
+  - component: {fileID: 921676784}
+  - component: {fileID: 921676783}
+  - component: {fileID: 921676782}
   - component: {fileID: 921676779}
   m_Layer: 0
   m_Name: Generator2
@@ -1512,6 +1566,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &921676782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921676778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 603fe3345db819044afb676cd0455863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemPrefab: {fileID: 702084627747598741, guid: b609f174e68768740908807568bccbe1, type: 3}
+  _coolTime: 3
+  boxCollider2D: {fileID: 921676779}
+  _moveDir: {x: -1, y: 0}
+--- !u!114 &921676783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921676778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 603fe3345db819044afb676cd0455863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemPrefab: {fileID: 5450201376285062232, guid: efb2815f8e6998f469d34ede64647145, type: 3}
+  _coolTime: 2
+  boxCollider2D: {fileID: 921676779}
+  _moveDir: {x: -1, y: 0}
+--- !u!114 &921676784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921676778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 603fe3345db819044afb676cd0455863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemPrefab: {fileID: 5630040215501022095, guid: 442109110f97bed4c89e0c81a0bf6b4a, type: 3}
+  _coolTime: 5
+  boxCollider2D: {fileID: 921676779}
+  _moveDir: {x: -1, y: 0}
 --- !u!1 &957563458
 GameObject:
   m_ObjectHideFlags: 0
@@ -2428,6 +2530,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1986746496}
   - component: {fileID: 1986746495}
+  - component: {fileID: 1986746499}
+  - component: {fileID: 1986746498}
+  - component: {fileID: 1986746497}
   - component: {fileID: 1986746494}
   m_Layer: 0
   m_Name: Generator4
@@ -2512,6 +2617,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1986746497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986746493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 603fe3345db819044afb676cd0455863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemPrefab: {fileID: 702084627747598741, guid: b609f174e68768740908807568bccbe1, type: 3}
+  _coolTime: 5
+  boxCollider2D: {fileID: 1986746494}
+  _moveDir: {x: 0, y: 1}
+--- !u!114 &1986746498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986746493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 603fe3345db819044afb676cd0455863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemPrefab: {fileID: 5450201376285062232, guid: efb2815f8e6998f469d34ede64647145, type: 3}
+  _coolTime: 4
+  boxCollider2D: {fileID: 1986746494}
+  _moveDir: {x: 0, y: 1}
+--- !u!114 &1986746499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986746493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 603fe3345db819044afb676cd0455863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemPrefab: {fileID: 5630040215501022095, guid: 442109110f97bed4c89e0c81a0bf6b4a, type: 3}
+  _coolTime: 3
+  boxCollider2D: {fileID: 1986746494}
+  _moveDir: {x: 0, y: 1}
 --- !u!1 &1999385168
 GameObject:
   m_ObjectHideFlags: 0
