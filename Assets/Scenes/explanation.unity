@@ -191,51 +191,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &292531148
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 292531150}
-  - component: {fileID: 292531149}
-  m_Layer: 0
-  m_Name: SE
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &292531149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 292531148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e40c3a87c6ccc3541b879d2032afd7ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _sounds: []
---- !u!4 &292531150
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 292531148}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 509.93982, y: 472.50308, z: -16.74662}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &363907073
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,6 +296,74 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1001 &411068461
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1903286148436285785, guid: e24b7421cced37847b10239ec02f112d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 509.93982
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903286148436285785, guid: e24b7421cced37847b10239ec02f112d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 472.50308
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903286148436285785, guid: e24b7421cced37847b10239ec02f112d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.74662
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903286148436285785, guid: e24b7421cced37847b10239ec02f112d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903286148436285785, guid: e24b7421cced37847b10239ec02f112d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903286148436285785, guid: e24b7421cced37847b10239ec02f112d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903286148436285785, guid: e24b7421cced37847b10239ec02f112d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903286148436285785, guid: e24b7421cced37847b10239ec02f112d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903286148436285785, guid: e24b7421cced37847b10239ec02f112d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1903286148436285785, guid: e24b7421cced37847b10239ec02f112d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579793993914641971, guid: e24b7421cced37847b10239ec02f112d, type: 3}
+      propertyPath: m_Name
+      value: SEController
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e24b7421cced37847b10239ec02f112d, type: 3}
+--- !u!114 &411068462 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7670899217376519092, guid: e24b7421cced37847b10239ec02f112d, type: 3}
+  m_PrefabInstance: {fileID: 411068461}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e40c3a87c6ccc3541b879d2032afd7ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &540839791
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,7 +541,7 @@ MonoBehaviour:
           m_StringArgument: Game
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 292531149}
+      - m_Target: {fileID: 411068462}
         m_TargetAssemblyTypeName: SEController, Assembly-CSharp
         m_MethodName: RunSE
         m_Mode: 2
@@ -878,7 +901,7 @@ MonoBehaviour:
           m_StringArgument: Title
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 292531149}
+      - m_Target: {fileID: 411068462}
         m_TargetAssemblyTypeName: SEController, Assembly-CSharp
         m_MethodName: RunSE
         m_Mode: 2
@@ -1090,4 +1113,4 @@ SceneRoots:
   - {fileID: 363907077}
   - {fileID: 228535684}
   - {fileID: 1171604366}
-  - {fileID: 292531150}
+  - {fileID: 411068461}
