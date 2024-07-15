@@ -14,6 +14,9 @@ public class generator : MonoBehaviour
 
     [SerializeField] Vector2 _moveDir;
     // Start is called before the first frame update
+
+    //[SerializeField] AudioClip aaaa;
+
     void Start()
     {
         _position = transform.position;
@@ -32,7 +35,7 @@ public class generator : MonoBehaviour
                 var item = Instantiate(_itemPrefab, new Vector3(_position.x + randomX, _position.y + randomY, 0), Quaternion.identity);
                 item.GetComponent<ItemMovementController>().MoveDir = _moveDir;
                 _coolTimeCount = 0;
-                //SEController.Instance.RunSE();
+                //SEController.Instance.RunSE(aaaa);
             }
     }
 
