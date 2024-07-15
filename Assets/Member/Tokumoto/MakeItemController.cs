@@ -20,7 +20,7 @@ public class MakeItemController : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "PlayerCopy")
+        else if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "PlayerCopy")
         {
             _gameSystemController.GameOver();
             SEController.Instance.RunSE(_getSound);
