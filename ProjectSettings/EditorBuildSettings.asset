@@ -10,17 +10,17 @@ EditorBuildSettings:
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Title.unity
-    guid: c33a3bd44b0adc546aeda46e95f4b669
+    guid: c61449467e95d25419e0a275c630965b
   - enabled: 1
     path: Assets/Scenes/Game.unity
-    guid: a78d25460fd7a0b439bdc51ded1dd1ce
+    guid: 27db809a53f36c144b30c286c19628be
   - enabled: 1
     path: Assets/Scenes/explanation.unity
     guid: d2d9a9375bbb251468f9a4cc4929173a
   - enabled: 0
     path: Assets/Scenes/Ranking.unity
     guid: 69f36625ca26610428f3e1b9e560c7b2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Credit.unity
     guid: c37a14d1e9ed40749a7ef450810758d4
   m_configObjects: {}
