@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _invincibleTime: 5
+  _addSlimeNumber: 1
 --- !u!58 &3139948096321766605
 CircleCollider2D:
   m_ObjectHideFlags: 0
