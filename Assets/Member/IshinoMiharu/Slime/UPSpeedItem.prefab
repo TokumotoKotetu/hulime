@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 364ff43c907df4c418335f6b48467e20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _upSpeedValue: 5
+  _upSpeedValue: 2
   _effectTime: 5
   _getSound: {fileID: 8300000, guid: 88d1cdf4d0ea2f94192fdfac881dbc30, type: 3}
 --- !u!50 &2455913114255561246

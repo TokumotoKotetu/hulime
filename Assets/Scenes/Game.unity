@@ -486,7 +486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 702084627747598741, guid: b609f174e68768740908807568bccbe1, type: 3}
-  _coolTime: 20
+  _coolTime: 15
   boxCollider2D: {fileID: 108887191}
   _moveDir: {x: -1, y: 0}
 --- !u!114 &108887195
@@ -502,7 +502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 5450201376285062232, guid: efb2815f8e6998f469d34ede64647145, type: 3}
-  _coolTime: 10
+  _coolTime: 6
   boxCollider2D: {fileID: 108887191}
   _moveDir: {x: -1, y: 0}
 --- !u!114 &108887196
@@ -1092,7 +1092,7 @@ Transform:
   m_GameObject: {fileID: 484832392}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.19, y: 0, z: 0}
+  m_LocalPosition: {x: 17.7, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1141,7 +1141,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 10}
+  m_Size: {x: 1, y: 11}
   m_EdgeRadius: 0
 --- !u!1 &569781527
 GameObject:
@@ -1742,7 +1742,7 @@ MonoBehaviour:
   speed: 2
   _moveSoundInterval: 0.5
   _moveSE: {fileID: 8300000, guid: 15ea6e1aa25d06d4f8e9fb0de6b6c70c, type: 3}
-  _wallSE: {fileID: 0}
+  _wallSE: {fileID: 8300000, guid: a0813c519520807438cce8326c0bdcdd, type: 3}
 --- !u!58 &762197823
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1806,8 +1806,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad5b3296b331d8479d203c2e2be04bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  _requiredSlimes: 5
+  speed: 2
+  _requiredSlimes: 10
   _addRadius: 0.1
   _invincible: 0
   _slimecopyNumber: 0
@@ -2232,7 +2232,7 @@ Transform:
   m_GameObject: {fileID: 986310154}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.6, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2281,7 +2281,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 10}
+  m_Size: {x: 1, y: 11}
   m_EdgeRadius: 0
 --- !u!1 &990126982
 GameObject:
@@ -2414,7 +2414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 5450201376285062232, guid: efb2815f8e6998f469d34ede64647145, type: 3}
-  _coolTime: 10
+  _coolTime: 7
   boxCollider2D: {fileID: 990126983}
   _moveDir: {x: 0, y: -1}
 --- !u!114 &990126988
@@ -2627,7 +2627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 5450201376285062232, guid: efb2815f8e6998f469d34ede64647145, type: 3}
-  _coolTime: 10
+  _coolTime: 6
   boxCollider2D: {fileID: 1009011606}
   _moveDir: {x: 0, y: 1}
 --- !u!114 &1009011611
@@ -2845,7 +2845,7 @@ Transform:
   m_GameObject: {fileID: 1252752275}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 8.51, y: 3.76, z: 0}
+  m_LocalPosition: {x: 8.51, y: 4.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2922,7 +2922,7 @@ Transform:
   m_GameObject: {fileID: 1380946541}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 8.51, y: -5.33, z: 0}
+  m_LocalPosition: {x: 8.51, y: -5.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4231,7 +4231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 5450201376285062232, guid: efb2815f8e6998f469d34ede64647145, type: 3}
-  _coolTime: 10
+  _coolTime: 7
   boxCollider2D: {fileID: 2043110129}
   _moveDir: {x: 1, y: 0}
 --- !u!4 &2043110131
@@ -4278,7 +4278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 702084627747598741, guid: b609f174e68768740908807568bccbe1, type: 3}
-  _coolTime: 20
+  _coolTime: 15
   boxCollider2D: {fileID: 2043110129}
   _moveDir: {x: 1, y: 0}
 --- !u!114 &2043110135
