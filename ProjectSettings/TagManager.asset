@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PlayerCopy
   - DeBuff
+  - Destroy
   layers:
   - Default
   - TransparentFX
