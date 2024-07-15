@@ -16,6 +16,7 @@ public class GameSystemController : MonoBehaviour
         _gameState = GameState.RunGame;
         _time = _startTime;
         _gameOverPanel.SetActive(false);
+        Time.timeScale = 1.0f;
     }
 
     void Update()
