@@ -9,6 +9,8 @@ public class PlayerIncreaseController : MonoBehaviour
     CircleCollider2D _circleCollider;
     Vector2 MakePos;
 
+    public bool _huku = false;
+
     // Update is called once per frame
     void Update()
     {
@@ -64,12 +66,14 @@ public class PlayerIncreaseController : MonoBehaviour
     }
     public IEnumerator Huku(float _invincibleTime)
     {
+        _huku = true;
         GameObject player = GameObject.Find("Range");
         var PlayerStats = FindObjectOfType<Playerstatuscontroller>();
         PlayerStats._invincible = true;
         Debug.Log(_invincibleTime);
         yield return new WaitForSeconds(_invincibleTime);
         Debug.Log("ñ≥ìGâèú");
+        _huku = false;
         PlayerStats._invincible = false;
 
 
