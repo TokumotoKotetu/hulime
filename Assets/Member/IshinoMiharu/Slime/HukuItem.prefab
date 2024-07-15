@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3880013314592029519}
   - component: {fileID: 8666545375074505775}
   - component: {fileID: 2173961789254924147}
+  - component: {fileID: 4632615298313941483}
   m_Layer: 0
   m_Name: HukuItem
   m_TagString: Untagged
@@ -191,3 +192,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 1
+--- !u!95 &4632615298313941483
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5630040215501022095}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7ca8d608ea67ec345a770b77c07735ba, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
