@@ -1571,6 +1571,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  _moveSoundInterval: 0.5
+  _moveSE: {fileID: 8300000, guid: 15ea6e1aa25d06d4f8e9fb0de6b6c70c, type: 3}
 --- !u!58 &762197823
 CircleCollider2D:
   m_ObjectHideFlags: 0
