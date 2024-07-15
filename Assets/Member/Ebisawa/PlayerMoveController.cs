@@ -28,27 +28,7 @@ public class PlayerController : MonoBehaviour
             rb2d.velocity = Vector2.zero;
             return;
         }
-
-        if (x > 0)
-        {
-            rb2d.velocity = Vector2.right * speed;
-        }
-        if (x < 0)
-        {
-            rb2d.velocity = Vector2.left * speed;
-        }
-        if (y > 0)
-        {
-            rb2d.velocity = Vector2.up * speed;
-        }
-        if (y < 0)
-        {
-            rb2d.velocity = Vector2.down * speed;
-        }
-        if (x == 0 && y == 0)
-        {
-            rb2d.velocity = Vector2.zero;
-        }
-
+        var _speed = new Vector2(x,y);
+        rb2d.velocity = _speed.normalized * speed;
     }
 }
