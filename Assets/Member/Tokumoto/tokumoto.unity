@@ -170,6 +170,7 @@ MonoBehaviour:
   _timerText: {fileID: 1974580828}
   _gameOverPanel: {fileID: 562453072}
   _startTime: 60
+  _gameOverSE: {fileID: 0}
   _gameState: 0
 --- !u!1 &417830831 stripped
 GameObject:
@@ -589,6 +590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerPrefab: {fileID: 6032122843931588430, guid: 7b7718275fbe5f74eba98cc68d728f49, type: 3}
   _player: {fileID: 949801181}
+  _huku: 0
 --- !u!58 &881650329
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -680,6 +682,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  _moveSoundInterval: 0
+  _moveSE: {fileID: 0}
+  _wallSE: {fileID: 0}
 --- !u!114 &881650333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -693,6 +698,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  _requiredSlimes: 0
+  _addRadius: 0
   _invincible: 0
 --- !u!1 &949801181
 GameObject:
@@ -1100,7 +1107,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 214737161075729281}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b69e93b42be37ba4faf407574f432b67, type: 3}
   m_Name: 

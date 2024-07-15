@@ -18,6 +18,8 @@ public class KazeItemController : MonoBehaviour
                 
                 var circleCollider = DeBuffItems[i].GetComponent<CircleCollider2D>();                 
                 circleCollider.enabled = false;
+                var itemMoveController = DeBuffItems[i].GetComponent<ItemMovementController>();
+                itemMoveController.enabled = false;
 
                 var rigidbody2D = DeBuffItems[i].GetComponent<Rigidbody2D>();
                 Vector2 force = new Vector2(Random.Range(-180,180), Random.Range(-180, 180));
