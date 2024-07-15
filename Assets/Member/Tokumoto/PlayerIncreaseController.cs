@@ -14,14 +14,6 @@ public class PlayerIncreaseController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            Increase(1);
-        }
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            Decrease(1);
-        }
     }
 
     public void Increase(int addNumber)
