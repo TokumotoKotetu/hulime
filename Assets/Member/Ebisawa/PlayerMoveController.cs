@@ -8,11 +8,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float speed = 1.0f;
     float x, y;
     GameSystemController _gameSystem;
+    Playerstatuscontroller _playerstatus;
 
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         _gameSystem = FindFirstObjectByType<GameSystemController>();
+        _playerstatus = GetComponent<Playerstatuscontroller>();
     }
 
     void Update()
@@ -20,6 +22,8 @@ public class PlayerController : MonoBehaviour
 
         x = Input.GetAxisRaw("Horizontal");
         y = Input.GetAxisRaw("Vertical");
+
+        speed = _playerstatus.TotalSpeed();
     }
     private void FixedUpdate()
     {

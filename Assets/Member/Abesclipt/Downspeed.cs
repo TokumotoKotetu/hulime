@@ -10,7 +10,7 @@ public class Downspeed : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") || collision.CompareTag("PlayerCopy"))
         {
             GameObject.FindObjectOfType<Playerstatuscontroller>().SlowDownSpeed(_downSpeedValue, _effectTime);
             Destroy(gameObject);
