@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb2d;
     [SerializeField] float speed = 1.0f;
+    [SerializeField] float _moveSoundInterval;
+    [SerializeField] AudioClip _moveSE;
     float x, y;
     GameSystemController _gameSystem;
     Playerstatuscontroller _playerstatus;
+    float timer = 0;
 
     void Start()
     {
@@ -24,6 +28,17 @@ public class PlayerController : MonoBehaviour
         y = Input.GetAxisRaw("Vertical");
 
         speed = _playerstatus.TotalSpeed();
+
+        if(x !=0 && y !=0)
+        {
+            timer += Time.deltaTime;
+        }
+
+        if(_moveSoundInterval < timer)
+        {
+            SEController.Instance.RunSE(_moveSE);
+            timer = 0;
+        }
     }
     private void FixedUpdate()
     {
