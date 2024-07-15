@@ -39,6 +39,7 @@ public class GameSystemController : MonoBehaviour
     {
         _gameOverPanel.SetActive(true);
         _gameState = GameState.Result;
+        Time.timeScale = 0;
     }
 
     public enum GameState{ Ready,RunGame,Result}
