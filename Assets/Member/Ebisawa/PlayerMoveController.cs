@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float speed = 1.0f;
     [SerializeField] float _moveSoundInterval;
     [SerializeField] AudioClip _moveSE;
+    [SerializeField] AudioClip _wallSE;
     float x, y;
     GameSystemController _gameSystem;
     Playerstatuscontroller _playerstatus;
@@ -49,5 +50,9 @@ public class PlayerController : MonoBehaviour
         }
         var _speed = new Vector2(x,y);
         rb2d.velocity = _speed.normalized * speed;
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        SEController.Instance.RunSE(_wallSE);
     }
 }

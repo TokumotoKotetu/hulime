@@ -8,6 +8,7 @@ public class GameSystemController : MonoBehaviour
     [SerializeField] Text _timerText;
     [SerializeField] GameObject _gameOverPanel;
     [SerializeField] float _startTime;
+    [SerializeField] AudioClip _gameOverSE;
     float _time;
     public GameState _gameState;
     void Start()
@@ -40,6 +41,7 @@ public class GameSystemController : MonoBehaviour
         _gameOverPanel.SetActive(true);
         _gameState = GameState.Result;
         Time.timeScale = 0;
+        SEController.Instance.RunSE(_gameOverSE);
     }
 
     public enum GameState{ Ready,RunGame,Result}
