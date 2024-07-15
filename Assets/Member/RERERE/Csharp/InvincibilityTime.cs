@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class InvincibilityTime : MonoBehaviour
 {
-    [SerializeField] float _invincibleTimeTow;
+    [SerializeField] float _invincibleTimeTow = 1;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("DeBuff"))
