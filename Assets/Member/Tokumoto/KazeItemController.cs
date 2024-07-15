@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class KazeItemController : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         
@@ -14,5 +14,12 @@ public class KazeItemController : MonoBehaviour
     void Update()
     {
         
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Player" ||  collision.tag == "PlayerCopy")
+        {
+
+        }
     }
 }
