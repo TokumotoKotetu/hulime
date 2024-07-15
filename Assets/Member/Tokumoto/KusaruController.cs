@@ -5,6 +5,7 @@ using UnityEngine;
 public class KusaruController : MonoBehaviour
 {
     [SerializeField] int _damage = 0;
+    [SerializeField] AudioClip _getSound;
     GameObject _player;
     PlayerIncreaseController _playerIncreaseController;
     Playerstatuscontroller _playerController;
@@ -27,8 +28,8 @@ public class KusaruController : MonoBehaviour
         {
             Debug.Log("プレイヤーが当たった");
 
-             _playerIncreaseController.Decrease(_damage);
-             Debug.Log("ダメージ");
+            _playerIncreaseController.Decrease(_damage);
+            SEController.Instance.RunSE(_getSound);
             Destroy(gameObject);
         }
     }

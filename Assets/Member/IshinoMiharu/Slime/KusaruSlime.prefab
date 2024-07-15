@@ -163,6 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 3
+  _getSound: {fileID: 8300000, guid: afae0e5d457ac2241a0149cf2de213d1, type: 3}
 --- !u!114 &-7078296411182478776
 MonoBehaviour:
   m_ObjectHideFlags: 0

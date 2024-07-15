@@ -6,6 +6,7 @@ using UnityEngine;
 public class KazeItemController : MonoBehaviour
 {
     [SerializeField] float _explosivePower = 1f;
+    [SerializeField] AudioClip _getSound;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player" ||  collision.tag == "PlayerCopy")
@@ -24,6 +25,7 @@ public class KazeItemController : MonoBehaviour
                 force = force.normalized * _explosivePower;
                 rigidbody2D.AddForce(force,ForceMode2D.Impulse);
             }
+            SEController.Instance.RunSE(_getSound);
             Destroy(gameObject);
         }
     }

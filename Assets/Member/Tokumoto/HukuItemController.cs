@@ -6,6 +6,7 @@ public class HukuItemController : MonoBehaviour
 {
     [SerializeField] float _invincibleTime = 5;
     [SerializeField] int _addSlimeNumber;
+    [SerializeField] AudioClip _getSound;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player"||collision.tag == "PlayerCopy")
@@ -14,6 +15,7 @@ public class HukuItemController : MonoBehaviour
             PlayerIncreaseController controller = gameObject.GetComponent<PlayerIncreaseController>();
             controller.StartHuku(_invincibleTime);
             controller.Increase(_addSlimeNumber);
+            SEController.Instance.RunSE(_getSound);
             Destroy(this.gameObject);
         } 
     }

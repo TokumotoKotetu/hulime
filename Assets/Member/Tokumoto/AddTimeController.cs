@@ -7,6 +7,7 @@ public class AddTimeController : MonoBehaviour
 {
     [SerializeField] float _addTime;
     [SerializeField] int _addSlimeNumber;
+    [SerializeField] AudioClip _getSound;
     GameObject _gameManager;
     GameSystemController _gameSystemController;
     private void Start()
@@ -23,6 +24,7 @@ public class AddTimeController : MonoBehaviour
         {
             _gameSystemController.AddTime(_addTime);
             controller.Increase(_addSlimeNumber);
+            SEController.Instance.RunSE(_getSound);
             Destroy(gameObject);
         }
     }

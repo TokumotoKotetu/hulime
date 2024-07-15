@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class MakeItemController : MonoBehaviour
 {
+    [SerializeField] AudioClip _getSound;
     GameObject _gameManager;
     GameSystemController _gameSystemController;
     GameObject _player;
@@ -25,6 +26,7 @@ public class MakeItemController : MonoBehaviour
         if (collision.gameObject.tag == "Player" || collision.gameObject.tag=="PlayerCopy")
         {
             _gameSystemController.GameOver();
+            SEController.Instance.RunSE(_getSound);
         }
     }
 }

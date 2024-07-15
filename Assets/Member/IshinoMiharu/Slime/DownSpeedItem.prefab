@@ -102,6 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _downSpeedValue: 5
   _effectTime: 5
+  _getSound: {fileID: 8300000, guid: afae0e5d457ac2241a0149cf2de213d1, type: 3}
 --- !u!114 &3092818027326524146
 MonoBehaviour:
   m_ObjectHideFlags: 0
