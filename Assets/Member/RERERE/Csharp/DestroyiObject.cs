@@ -17,9 +17,9 @@ public class DestroyObject : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(gameObject.CompareTag("Destroy"))
+        if(collision.CompareTag("Destroy"))
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
     }
 }
