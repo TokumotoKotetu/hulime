@@ -635,7 +635,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &352065386
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1573,6 +1573,7 @@ MonoBehaviour:
   speed: 2
   _moveSoundInterval: 0.5
   _moveSE: {fileID: 8300000, guid: 15ea6e1aa25d06d4f8e9fb0de6b6c70c, type: 3}
+  _wallSE: {fileID: 0}
 --- !u!58 &762197823
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3115,6 +3116,7 @@ MonoBehaviour:
   _timerText: {fileID: 1649650416}
   _gameOverPanel: {fileID: 352065385}
   _startTime: 60
+  _gameOverSE: {fileID: 0}
   _gameState: 0
 --- !u!4 &1801185013
 Transform:
@@ -3564,10 +3566,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2043110131}
-  - component: {fileID: 2043110130}
   - component: {fileID: 2043110133}
-  - component: {fileID: 2043110134}
+  - component: {fileID: 2043110139}
   - component: {fileID: 2043110135}
+  - component: {fileID: 2043110138}
+  - component: {fileID: 2043110130}
+  - component: {fileID: 2043110134}
   - component: {fileID: 2043110136}
   - component: {fileID: 2043110137}
   - component: {fileID: 2043110129}
@@ -3636,7 +3640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 5450201376285062232, guid: efb2815f8e6998f469d34ede64647145, type: 3}
-  _coolTime: 4
+  _coolTime: 5
   boxCollider2D: {fileID: 2043110129}
   _moveDir: {x: 1, y: 0}
 --- !u!4 &2043110131
@@ -3667,7 +3671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 6140787363165046036, guid: b7723497ba08b5248b130169e09f2871, type: 3}
-  _coolTime: 6
+  _coolTime: 5
   boxCollider2D: {fileID: 2043110129}
   _moveDir: {x: 1, y: 0}
 --- !u!114 &2043110134
@@ -3699,7 +3703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 5630040215501022095, guid: 442109110f97bed4c89e0c81a0bf6b4a, type: 3}
-  _coolTime: 10
+  _coolTime: 5
   boxCollider2D: {fileID: 2043110129}
   _moveDir: {x: 1, y: 0}
 --- !u!114 &2043110136
@@ -3715,7 +3719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 5885512983634586275, guid: adc7cff2b0e182c4684a94ccb660760e, type: 3}
-  _coolTime: 3
+  _coolTime: 5
   boxCollider2D: {fileID: 2043110129}
   _moveDir: {x: 1, y: 0}
 --- !u!114 &2043110137
@@ -3731,7 +3735,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemPrefab: {fileID: 8855393488568180836, guid: 37c4ba3a8c057934984f00de47d61239, type: 3}
-  _coolTime: 4
+  _coolTime: 5
+  boxCollider2D: {fileID: 2043110129}
+  _moveDir: {x: 1, y: 0}
+--- !u!114 &2043110138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043110128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 603fe3345db819044afb676cd0455863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemPrefab: {fileID: 1781146711637546298, guid: 5a7a7f19a7fbcb443a8de5d5d58b8788, type: 3}
+  _coolTime: 5
+  boxCollider2D: {fileID: 2043110129}
+  _moveDir: {x: 1, y: 0}
+--- !u!114 &2043110139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043110128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 603fe3345db819044afb676cd0455863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemPrefab: {fileID: 4891598347034098448, guid: 697bd686a63880e41ad15532e86d3546, type: 3}
+  _coolTime: 5
   boxCollider2D: {fileID: 2043110129}
   _moveDir: {x: 1, y: 0}
 --- !u!1660057539 &9223372036854775807

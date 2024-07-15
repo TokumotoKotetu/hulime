@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7407247547261222167}
   m_Layer: 0
   m_Name: DownSpeedItem
-  m_TagString: Untagged
+  m_TagString: DeBuff
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
