@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Build.Content;
 using UnityEngine;
 
 public class MakeItemController : MonoBehaviour
@@ -19,11 +16,11 @@ public class MakeItemController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(_playerController._invincible)
+        if (_playerController._invincible)
         {
             Destroy(gameObject);
         }
-        if (collision.gameObject.tag == "Player" || collision.gameObject.tag=="PlayerCopy")
+        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "PlayerCopy")
         {
             _gameSystemController.GameOver();
             SEController.Instance.RunSE(_getSound);
