@@ -9,6 +9,7 @@ public class GameSystemController : MonoBehaviour
     [SerializeField] GameObject _gameOverPanel;
     [SerializeField] float _startTime;
     [SerializeField] AudioClip _gameOverSE;
+    [SerializeField] RankingUI _rankingUI;
     float _time;
     public GameState _gameState;
     void Start()
@@ -43,6 +44,9 @@ public class GameSystemController : MonoBehaviour
         _gameState = GameState.Result;
         Time.timeScale = 0;
         SEController.Instance.RunSE(_gameOverSE);
+
+        var Player = GameObject.Find("Range");
+        _rankingUI.DisplayRanking(Player.GetComponent<Playerstatuscontroller>()._slimecopyNumber);
     }
 
     public enum GameState{ Ready,RunGame,Result}
