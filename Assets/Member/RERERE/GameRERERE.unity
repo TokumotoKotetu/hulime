@@ -1405,6 +1405,7 @@ GameObject:
   - component: {fileID: 762197822}
   - component: {fileID: 762197821}
   - component: {fileID: 762197820}
+  - component: {fileID: 762197826}
   m_Layer: 0
   m_Name: Range
   m_TagString: Untagged
@@ -1453,6 +1454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerPrefab: {fileID: 6032122843931588430, guid: 7b7718275fbe5f74eba98cc68d728f49, type: 3}
   _player: {fileID: 779204623}
+  _huku: 0
 --- !u!114 &762197822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1466,6 +1468,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  _moveSoundInterval: 0
+  _moveSE: {fileID: 0}
+  _wallSE: {fileID: 0}
 --- !u!58 &762197823
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1531,6 +1536,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   _invincible: 0
+--- !u!114 &762197826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762197819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa601b0de62e92d43bcf5e0ad569ba7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _invincibleTimeTow: 1
 --- !u!1 &779204623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,6 +1560,7 @@ GameObject:
   - component: {fileID: 779204626}
   - component: {fileID: 779204625}
   - component: {fileID: 779204624}
+  - component: {fileID: 779204627}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1651,6 +1670,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 762197824}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &779204627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779204623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c35020b37d0ac14d93a2adf36059622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &818474136
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1875,7 +1906,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 921676778}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 603fe3345db819044afb676cd0455863, type: 3}
   m_Name: 
@@ -2833,6 +2864,7 @@ MonoBehaviour:
   _timerText: {fileID: 1649650416}
   _gameOverPanel: {fileID: 352065385}
   _startTime: 60
+  _gameOverSE: {fileID: 0}
   _gameState: 0
 --- !u!4 &1801185013
 Transform:
@@ -3411,7 +3443,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043110128}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 603fe3345db819044afb676cd0455863, type: 3}
   m_Name: 
