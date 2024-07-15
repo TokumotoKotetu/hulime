@@ -17,7 +17,7 @@ public class Playerstatuscontroller : MonoBehaviour
     float _speedUpTimer;
     float _speedDownTimer;
     public bool _invincible = false;
-    int _slimecopyNumber = 0;
+    public int _slimecopyNumber = 0;
     private void Start()
     {
         _circleCollider2D = GetComponent<CircleCollider2D>();
