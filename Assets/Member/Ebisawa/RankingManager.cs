@@ -7,7 +7,6 @@ using UnityEngine;
 
 public class RankingManager : MonoBehaviour
 {
-    private List<RankingEntry> rankingEntries;
     int[] _ranking;
 
     void Awake()
@@ -57,6 +56,5 @@ public class RankingManager : MonoBehaviour
     [Serializable]
     private class RankingList
     {
-        public List<RankingEntry> rankingEntries;
     }
 }
